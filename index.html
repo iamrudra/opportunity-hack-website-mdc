@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html class="mdc-typography">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="hackathon,opportunity hack,paypal opportunity hack,hackathon san jose,hack for non profit,opensource karma">
+    <meta name="description" content="Website for PayPal opportunity Hack">
+    <meta name="author" content="Vidit Maniyar (For Opportunity Hack, PayPal)">
+
+    <!-- MDC-Web CSS file-->
+    <link rel="stylesheet" href="vendor/mdc-web/material-components-web.min.css">
+    <!-- Material Desigh Icons-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <style>
+        .demo-body {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .demo-main {
+            padding-left: 16px;
+            overflow: auto;
+        }
+    </style>
+</head>
+<body class="mdc-typography demo-body">
+<div class="mdc-toolbar mdc-toolbar--fixed">
+    <!--<div class="mdc-toolbar__row">
+        <section class="mdc-toolbar__section mdc-toolbar__section--align-start">
+            <button class="demo-menu material-icons mdc-toolbar__icon--menu">menu</button>
+            <span class="mdc-toolbar__title catalog-title">Temporary Drawer</span>
+        </section>
+    </div>-->
+    <div class="mdc-toolbar__row">
+        <div class="mdc-toolbar__section mdc-toolbar__section--shrink-to-fit mdc-toolbar__section--align-start">
+            <h1 class="mdc-toolbar__title">Title</h1>
+        </div>
+        <div class="mdc-toolbar__section mdc-toolbar__section--align-end">
+            <div>
+                <nav id="toolbar-tab-bar-accent-indicator" class="mdc-tab-bar mdc-tab-bar--indicator-accent mdc-tab-bar-upgraded">
+                    <a class="mdc-tab mdc-ripple-upgraded mdc-tab--active" href="#one" style="--mdc-ripple-surface-width:160px; --mdc-ripple-surface-height:48px; --mdc-ripple-fg-size:96px; --mdc-ripple-fg-scale:1.84422; --mdc-ripple-fg-translate-start:44px, -19.5938px; --mdc-ripple-fg-translate-end:32px, -24px;">Item One</a>
+                    <a class="mdc-tab mdc-ripple-upgraded" href="#two" style="--mdc-ripple-surface-width:160px; --mdc-ripple-surface-height:48px; --mdc-ripple-fg-size:96px; --mdc-ripple-fg-scale:1.84422; --mdc-ripple-fg-translate-start:47px, -23.5938px; --mdc-ripple-fg-translate-end:32px, -24px;">Item Two</a>
+                    <a class="mdc-tab mdc-ripple-upgraded" href="#three" style="--mdc-ripple-surface-width:160px; --mdc-ripple-surface-height:48px; --mdc-ripple-fg-size:96px; --mdc-ripple-fg-scale:1.84422; --mdc-ripple-fg-translate-start:15px, -34.5938px; --mdc-ripple-fg-translate-end:32px, -24px;">Item Three</a>
+                    <span class="mdc-tab-bar__indicator" style="transform: translateX(0px) scale(0.333333, 1); visibility: visible;"></span>
+                </nav>
+            </div>
+        </div>
+    </div>
+</div>
+
+<aside class="mdc-temporary-drawer">
+    <nav class="mdc-temporary-drawer__drawer">
+        <!--<header class="mdc-temporary-drawer__header">
+            <div class="mdc-temporary-drawer__header-content mdc-theme--primary-bg mdc-theme--text-primary-on-primary">
+                Header here
+            </div>
+        </header>-->
+        <nav class="mdc-temporary-drawer__content mdc-list-group">
+            <div id="icon-with-text-demo" class="mdc-list">
+                <a class="mdc-list-item mdc-temporary-drawer--selected" href="#">
+                    <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">inbox</i>Inbox
+                </a>
+                <a class="mdc-list-item" href="#">
+                    <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">star</i>Star
+                </a>
+                <a class="mdc-list-item" href="#">
+                    <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">send</i>Sent Mail
+                </a>
+                <a class="mdc-list-item" href="#">
+                    <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">drafts</i>Drafts
+                </a>
+            </div>
+
+            <hr class="mdc-list-divider">
+
+            <div class="mdc-list">
+                <a class="mdc-list-item" href="#">
+                    <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">email</i>All Mail
+                </a>
+                <a class="mdc-list-item" href="#">
+                    <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">delete</i>Trash
+                </a>
+                <a class="mdc-list-item" href="#">
+                    <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">report</i>Spam
+                </a>
+            </div>
+        </nav>
+    </nav>
+</aside>
+<main class="demo-main mdc-toolbar-fixed-adjust">
+    <h1 class="mdc-typography--display1">Temporary Drawer</h1>
+    <p class="mdc-typography--body1">Click the menu icon above to open.</p>
+</main>
+<!-- MDC-Web JS init-->
+<script src="vendor/mdc-web/material-components-web.min.js"></script>
+<script>window.mdc.autoInit();</script>
+
+<!--Drawer JS-->
+<!-- <script>
+    var drawerEl = document.querySelector('.mdc-temporary-drawer');
+    var MDCTemporaryDrawer = mdc.drawer.MDCTemporaryDrawer;
+    var drawer = new MDCTemporaryDrawer(drawerEl);
+    document.querySelector('.demo-menu').addEventListener('click', function() {
+        drawer.open = true;
+    });
+    drawerEl.addEventListener('MDCTemporaryDrawer:open', function() {
+        console.log('Received MDCTemporaryDrawer:open');
+    });
+    drawerEl.addEventListener('MDCTemporaryDrawer:close', function() {
+        console.log('Received MDCTemporaryDrawer:close');
+    });
+</script> -->
+
+<!--Tabs JS-->
+<script>
+    (function() {
+        setTimeout(function () {
+            window.accentIndicatorToolbarTabBar = new mdc.tabs.MDCTabBar(document.querySelector('#toolbar-tab-bar-accent-indicator'));
+        },200)
+    })();
+</script>
+</body>
+</html>
